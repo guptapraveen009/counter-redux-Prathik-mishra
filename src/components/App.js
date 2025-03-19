@@ -1,13 +1,22 @@
 
-import React from "react";
-import './../styles/App.css';
+import React from 'react';
 
-const App = () => {
+import Counter from './componets/counter';
+import './App.css';
+
+
+function App() {
   return (
-    <div>
-        {/* Do not remove the main div */}
+
+    <div className="App">
+      <header className="App-header">
+      <h1>Redux Counter App</h1>
+      <Counter />
+      </header>
     </div>
-  )
+    
+  );
 }
 
-export default App
+
+export default App;
